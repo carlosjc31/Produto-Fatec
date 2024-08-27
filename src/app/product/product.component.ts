@@ -9,9 +9,9 @@ import { Product } from '../product';
 })
 export class ProductComponent {
   products: Product[] = [
-    {"id": 1,
-     "name"    : "Computador I7",
-     "price"   :  6.000,
+    { id: 1,
+      name   : "Computador I7",
+     price   :  6.000,
      "category": "Eletrônicos"
     },
     {"id"       : 2,

@@ -27,6 +27,6 @@ export class ProductsTableComponent implements OnInit {
       next: () => this.loadProducts()
     })
    }
-   
+
 }
 

@@ -1,22 +1,22 @@
 {
- "products" :
- [
-    { "id"    : 1,
-    "name"    : "computador I7",
-    "price"   :  6000,
-    "category": "Eletrônicos"
+  "products": [
+    {
+      "id": 1,
+      "name": "computador I7",
+      "price": 6000,
+      "category": "Eletrônicos"
     },
-
-    { "id"      : 2,
-    "name"    : "Computador I5",
-    "price"   :  5200,
-    "category": "Eletrônicos"
+    {
+      "id": 2,
+      "name": "Computador I5",
+      "price": "4000",
+      "category": "Eletrônicos"
     },
-
-    {"id"     : 3,
-    "name"    : "Mouse",
-    "price"   : 50,
-    "category": "Eletrônicos"
+    {
+      "id": 3,
+      "name": "Mouse",
+      "price": 50,
+      "category": "Eletrônicos"
     }
- ]
+  ]
 }

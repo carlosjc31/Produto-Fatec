@@ -17,6 +17,24 @@
       "name": "Mouse",
       "price": 50,
       "category": "Eletrônicos"
+    },
+    {
+      "id": 4,
+      "name": "Celular 2",
+      "price": "2500",
+      "category": "Eletrônico"
+    },
+    {
+      "id": 5,
+      "name": "carregador",
+      "price": "50",
+      "category": "Peça"
+    },
+    {
+      "id": 6,
+      "name": "",
+      "price": "",
+      "category": ""
     }
   ]
 }

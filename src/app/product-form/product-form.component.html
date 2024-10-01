@@ -16,7 +16,8 @@
       <input formControlName="category" type="text" class="form-control" id="category" placeholder="digite a Categoria">
     </div>
 
-    <button type="button" class="btn btn-primary" (click)="update()">Salvar</button>
+    <button *ngIf="isEditing" type="button" class="btn btn-primary" (click)="update()">Salvar</button>
 
+    <button *ngIf="!isEditing" type="button" class="btn btn-primary" (click)="save()">Salvar</button>
   </form>
 </div>

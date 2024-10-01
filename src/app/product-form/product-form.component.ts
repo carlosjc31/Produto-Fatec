@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ProductService } from '../product.service';
 import { Form, FormBuilder, FormGroup } from '@angular/forms';
+
 @Component({
   selector: 'app-product-form',
   templateUrl: './product-form.component.html',
@@ -10,6 +11,7 @@ import { Form, FormBuilder, FormGroup } from '@angular/forms';
 export class ProductFormComponent implements OnInit{
 
   formGroupProduct: FormGroup;
+  isEditing = false;
 
   constructor(private router: Router,
               private activeRouter: ActivatedRoute,
@@ -25,7 +27,10 @@ export class ProductFormComponent implements OnInit{
   }
   ngOnInit()  {
     const id = Number(this.activeRouter.snapshot.paramMap.get("id"));
+    if(id != 0){
+      this.isEditing=true;
     this.loadProduct(id);
+    }
   }
 loadProduct(id: number){
   this.service.getProductById(id).subscribe({
@@ -37,6 +42,10 @@ update(){
     next: () => this.router.navigate(['products'])
   })
 }
-
+save(){
+  this.service.save(this.formGroupProduct.value).subscribe({
+    next: () => this.router.navigate(['products'])
+  })
+}
 }
 
